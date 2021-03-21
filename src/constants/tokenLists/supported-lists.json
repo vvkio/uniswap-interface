@@ -431,7 +431,7 @@
     },
     {
       "name": "Ada",
-      "address": "0x8eb24319393716668d768dcec29356ae9cffe215",
+      "address": "0x0000000000000000000000000000000000000000",
       "symbol": "ADA",
       "decimals": 18,
       "chainId": 1,

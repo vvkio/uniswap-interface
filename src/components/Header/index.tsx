@@ -364,7 +364,7 @@ export default function Header() {
         <HeaderElement>
           <HideSmall>
             {chainId && NETWORK_LABELS[chainId] && (
-              <NetworkCard title={NETWORK_LABELS[chainId]}>Devnet</NetworkCard>
+              <NetworkCard title="Devnet">Devnet</NetworkCard>
             )}
           </HideSmall>
           {/*{availableClaim && !showClaimPopup && (*/}

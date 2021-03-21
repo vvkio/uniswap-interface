@@ -66,7 +66,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
           </RowFixed>
           <TYPE.black fontSize={14} color={theme.text1}>
             {/*{realizedLPFee ? `${realizedLPFee.toSignificant(4)} ${trade.inputAmount.currency.symbol}` : '-'}*/}
-            {realizedLPFee ? parseFloat(realizedLPFee?.toSignificant(6)) * 1499.49 + ' ' + 'ADA' : '-'}
+            {realizedLPFee ? parseFloat(realizedLPFee?.toSignificant(6)) * 1499.49 + ' ADA' : '-'}
           </TYPE.black>
         </RowBetween>
       </AutoColumn>
