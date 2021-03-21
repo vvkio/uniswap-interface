@@ -65,7 +65,8 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             <QuestionHelper text="A portion of each trade (0.30%) goes to liquidity providers as a protocol incentive." />
           </RowFixed>
           <TYPE.black fontSize={14} color={theme.text1}>
-            {realizedLPFee ? `${realizedLPFee.toSignificant(4)} ${trade.inputAmount.currency.symbol}` : '-'}
+            {/*{realizedLPFee ? `${realizedLPFee.toSignificant(4)} ${trade.inputAmount.currency.symbol}` : '-'}*/}
+            {realizedLPFee ? parseFloat(realizedLPFee?.toSignificant(6)) * 1499.49 + ' ' + 'ADA' : '-'}
           </TYPE.black>
         </RowBetween>
       </AutoColumn>

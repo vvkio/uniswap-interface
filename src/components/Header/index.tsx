@@ -364,7 +364,7 @@ export default function Header() {
         <HeaderElement>
           <HideSmall>
             {chainId && NETWORK_LABELS[chainId] && (
-              <NetworkCard title={NETWORK_LABELS[chainId]}>{NETWORK_LABELS[chainId]}</NetworkCard>
+              <NetworkCard title={NETWORK_LABELS[chainId]}>Devnet</NetworkCard>
             )}
           </HideSmall>
           {/*{availableClaim && !showClaimPopup && (*/}
@@ -406,7 +406,8 @@ export default function Header() {
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
             {account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                {userEthBalance?.toSignificant(4)} ETH
+                {/*{userEthBalance?.toSignificant(4)} ETH*/}
+                {parseFloat(userEthBalance?.toSignificant(4)) * 1499.49} ADA
               </BalanceText>
             ) : null}
             <Web3Status />
